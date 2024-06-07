@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     >
 
     <TextView
@@ -13,5 +14,36 @@
         android:layout_marginTop="20dp"
         android:text="Nome do personagem"
         />
+
+    <ImageView
+        android:id="@+id/imageViewCharacter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/buttonAlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vivo"/>
+
+        <Button
+            android:id="@+id/buttonDead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morto"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"/>
 
 </LinearLayout>
